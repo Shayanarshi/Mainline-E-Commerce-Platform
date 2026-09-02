@@ -36,7 +36,7 @@ const Register = () => {
           bg-slate-800 text-white'>
 
             <section className='flex gap-6 justify-between'>
-                <label htmlFor="username">username</label>
+                <label htmlFor="username">Username</label>
                 
                 <input onChange={handleChange} value={username}
                  type="text" name="username" id="username" 
@@ -47,7 +47,7 @@ const Register = () => {
 
 
             <section className='flex gap-6 justify-between'>
-                <label htmlFor="email">email</label>
+                <label htmlFor="email">Email</label>
                 <input onChange={handleChange}  value = {email}
                 className='border py-2 pl-4 rounded-lg'
                 type="email" name="email" id="email" />
@@ -56,7 +56,7 @@ const Register = () => {
 
 
             <section className='flex gap-6 justify-between'>
-                <label htmlFor="password">password</label>
+                <label htmlFor="password">Password</label>
                 <input onChange={handleChange} value = {password}
                 className='border py-2 pl-4 rounded-lg'
                  type="password" name="password" id="password" />

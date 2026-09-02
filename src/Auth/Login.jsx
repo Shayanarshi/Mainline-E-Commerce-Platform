@@ -39,7 +39,7 @@ const Login = () => {
         }
 
   return (
-     <section className='w-full pt-20 h-[80vh] flex flex-col pt-[15vh] items-center gap-8'>
+     <section className='w-full pt-20 h-[80vh] flex flex-col pt-15vh items-center gap-8'>
         <h2 className='text-4xl'>Login with Username & password </h2>
 
         <form onSubmit={handleSubmit}
@@ -48,7 +48,7 @@ const Login = () => {
           bg-slate-800 text-white'>
 
             <section className='flex gap-6 justify-between'>
-                <label htmlFor="username">username</label>
+                <label htmlFor="username">Username</label>
                 
                 <input onChange={handleChange} value={username}
                  type="text" name="username" id="username" 
@@ -58,7 +58,7 @@ const Login = () => {
 
 
             <section className='flex gap-6 justify-between'>
-                <label htmlFor="password">password</label>
+                <label htmlFor="password">Password</label>
                 <input onChange={handleChange} value = {password}
                 className='border py-2 pl-4 rounded-lg'
                  type="password" name="password" id="password" />

@@ -2,7 +2,13 @@ import React from "react";
 import googleStore from "/assets/home-page/google-play.jpeg"
 import appStore from "/assets/home-page/app-store.jpeg"
 import paymentCards from "/assets/home-page/payment-cards.png"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebookF,
+    faInstagram,
+    faTwitter,
+    faLinkedinIn
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     return (
@@ -11,19 +17,60 @@ const Footer = () => {
                 <img src="./images/home-page/logo.png" alt="" />
                 <h3 className="font-bold text-[20px] py-2">Contact</h3>
                 <div className="text-[#465b52] space-y-[8px] text-[13px] mb-5">
-                    <p>
-                        <strong>Address:</strong> 562 Wellington Road, Street 32, San
-                        Francisco
+                     <p>
+                     <strong>Address:</strong> Arshi Manzil, Street 31, Hyderabad, India
                     </p>
+                     <p>
+               <strong>Phone:</strong> +91 98765 43210 / +91 91234 56789
+                     </p>
                     <p>
-                        <strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 678
-                    </p>
-                    <p>
-                        <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat
+                      <strong>Hours:</strong> 10:00 - 17:00, Mon - Sat
                     </p>
                 </div>
-                <p className="font-semibold mb-2">Follow US</p>
-                <div>--social media icons--</div>
+           <p className="font-semibold mb-2">Follow Us</p>
+
+<div className="flex gap-4 text-xl">
+    <a
+        href="#"
+        className="hover:text-[#088178] transition-colors"
+        aria-label="Facebook"
+    >
+        <FontAwesomeIcon icon={faFacebookF} />
+    </a>
+
+    <a
+        href="#"
+        className="hover:text-[#088178] transition-colors"
+        aria-label="Instagram"
+    >
+        <FontAwesomeIcon icon={faInstagram} />
+    </a>
+
+    <a
+        href="#"
+        className="hover:text-[#088178] transition-colors"
+        aria-label="Twitter"
+    >
+        <FontAwesomeIcon icon={faTwitter} />
+    </a>
+
+    <a
+        href="https://www.linkedin.com/in/shayanarshi/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-[#088178] transition-colors"
+        aria-label="LinkedIn"
+    >
+        <FontAwesomeIcon icon={faLinkedinIn} />
+    </a>
+</div>
+
+                
+                
+
+
+
+
             </div>
 
             <div className="font-semibold">

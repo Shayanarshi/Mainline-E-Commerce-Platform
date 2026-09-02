@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MainDataContext } from '../Contexts/MainContext'
-import logo from "/assets/logo.png"
+import logo from "/assets/logo.svg"
 
 const Header = () => {
 
@@ -36,7 +36,7 @@ const Header = () => {
           :<>
         
         <NavLink to = {"/auth/login"}>Login</NavLink>
-        <NavLink to = {"/auth/register"}>register</NavLink>
+        <NavLink to = {"/auth/register"}>Register</NavLink>
           </>
         }
 
