@@ -15,7 +15,7 @@ const NewCollection = () => {
           },
           {
               heading: "New Footwear Collection ",
-              desc: "Spring/Summer 2023",
+              desc: "Spring/Summer 2026",
               bg: img2,
           },
           { heading: "T-Shirt", desc: "New Trendy Prints", bg: img3 },
