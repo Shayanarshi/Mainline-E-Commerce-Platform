@@ -18,7 +18,8 @@ const NewCollection = () => {
               desc: "Spring/Summer 2026",
               bg: img2,
           },
-          { heading: "T-Shirt", desc: "New Trendy Prints", bg: img3 },
+          { heading: "T-Shirt", desc: "New Trendy Prints", bg: img3 },   
+
       ];
   return (
     <section className="w-[100%] h-auto bg-white sm:px-[80px] px-[15px]">

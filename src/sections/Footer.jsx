@@ -21,7 +21,7 @@ const Footer = () => {
                      <strong>Address:</strong> Arshi Manzil, Street 31, Hyderabad, India
                     </p>
                      <p>
-               <strong>Phone:</strong> +91 98765 43210 / +91 91234 56789
+               <strong>Phone:</strong> +91 8406024234
                      </p>
                     <p>
                       <strong>Hours:</strong> 10:00 - 17:00, Mon - Sat

@@ -35,11 +35,12 @@ const Login = () => {
                navigate("/auth/profile")
                console.log("login Successfully ")
             }
+            
             setUserData (initialData)
         }
 
   return (
-     <section className='w-full pt-20 h-[80vh] flex flex-col pt-15vh items-center gap-8'>
+     <section className='w-full pt-30 h-[80vh] flex flex-col pt-15vh items-center gap-8'>
         <h2 className='text-4xl'>Login with Username & password </h2>
 
         <form onSubmit={handleSubmit}

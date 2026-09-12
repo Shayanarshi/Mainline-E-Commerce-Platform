@@ -27,7 +27,7 @@ const Register = () => {
 
 
   return (
-    <section className='w-full pt-20 h-screen flex flex-col  items-center gap-8'>
+    <section className='w-full pt-30 h-screen flex flex-col  items-center gap-8'>
         <h2 className='text-4xl'>Create a New Account </h2>
 
         <form onSubmit={handleSubmit}

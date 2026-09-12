@@ -69,5 +69,4 @@ const CartPage = () => {
     </article>
   )
 }
-
 export default CartPage
