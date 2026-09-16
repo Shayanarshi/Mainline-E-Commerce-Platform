@@ -6,10 +6,18 @@ const CartPage = () => {
   let { cart, removeFromCart } = useContext(CartContext)
   console.log(cart)
 
+  // let totalAmount = cart.reduce((acc, pro) => {
+  //   let price = +(pro.price.slice(1))
+  //   return acc = acc + price
+  // }, 0)
+
   let totalAmount = cart.reduce((acc, pro) => {
-    let price = +(pro.price.slice(1))
-    return acc = acc + price
-  }, 0)
+  let price = +(pro.price.slice(1))
+  return acc + (price * pro.quantity)
+}, 0)
+
+
+
 
   console.log(totalAmount)
 
@@ -38,6 +46,10 @@ const CartPage = () => {
                         <p className="pt-[7px] text-[#088178] font-bold">
                           {product.price}
                         </p>
+
+                        <p>Quantity: {product.quantity}</p>
+
+
                       </div>
                       <button onClick={() => removeFromCart(product.id)}
                         className="bg-red-600 text-white cursor-pointer rounded-full absolute px-4 py-2 right-2 bottom-2 font-bold flex items-center"
@@ -52,7 +64,15 @@ const CartPage = () => {
               }
             </section>
             <section className='w-[30%] border-l p-3 text-2xl flex flex-col gap-6 font-mono'>
+
               <p>Total Number of products : {cart.length} </p>
+
+              <p>
+                 Total Quantity : {cart.reduce((acc, pro) => acc + pro.quantity, 0)}
+                </p>
+
+              {/* onClick={()=> addToCart({...value, quantity: parseInt(val)})} */}
+
               <p>Total Amount : ${totalAmount} </p>
             </section>
           </>

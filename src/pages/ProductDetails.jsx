@@ -71,7 +71,10 @@ const ProductDetails = () => {
                 </button>
 
                 <button
-                  onClick={()=>addToCart(value)}
+                  // onClick={()=>addToCart(value)}
+
+                  onClick={() => addToCart({...value, quantity: parseInt(val)})}
+                  
                   className=" rounded-lg  ml-10 font-bold text-white bg-[#088178] py-[12px] px-[30px] text-[1.2rem]"
                 >
                   Add to cart

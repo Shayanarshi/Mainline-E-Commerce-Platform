@@ -6,6 +6,7 @@ const Register = () => {
             password : "",
             c_password : "",
         }
+        
 
         let [userData , setUserData] = useState(initialData)
 
@@ -48,7 +49,8 @@ const Register = () => {
 
             <section className='flex gap-6 justify-between'>
                 <label htmlFor="email">Email</label>
-                <input onChange={handleChange}  value = {email}
+                <input onChange={handleChange} 
+                required value = {email}
                 className='border py-2 pl-4 rounded-lg'
                 type="email" name="email" id="email" />
             </section>

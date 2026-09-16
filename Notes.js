@@ -81,5 +81,5 @@
     >> create one github repo 
     >> push your entire project code in that repo
     >> login in vercel with the github
-    >> we will do deployment.
+    >> deployment.
 */

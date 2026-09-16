@@ -48,7 +48,7 @@ const Login = () => {
           flex flex-col gap-6 font-mono text-3xl
           bg-slate-800 text-white'>
 
-            <section className='flex gap-6 justify-between'>
+            <section className='flex gap-6 justify-between required:'>
                 <label htmlFor="username">Username</label>
                 
                 <input onChange={handleChange} value={username}
