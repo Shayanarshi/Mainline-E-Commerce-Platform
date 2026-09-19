@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <section className='w-full h-[110vh] relative'>
-        <img src="https://carafashionhubbygaganbaghel.vercel.app/assets/home-page/Hero/hero-desktop.png" alt="hero section bg image"
+    <section className='w-full h-[150vh] relative '>
+        <img src="/assets/home-page/Hero/hero-desktop3.png" alt="hero section bg image"
         className=' absolute inset-0  w-full h-full' 
         />
 
